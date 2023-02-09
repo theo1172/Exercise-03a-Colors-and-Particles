@@ -157,32 +157,7 @@ We will, likewise, add a particle emitter to `res://Brick/Brick.tscn`. As a chil
  * Emission Shape->Rect Extents = (45,15)
  * Direction->Direction = (0,0)
  * Direction->Spread = 180
- * Gravity->Gravity = (0,0)
- * Initial Velocity->Velocity = 300
- * Initial Velocity->Velocity Random = 1
- * Scale->Scale Amount = 0.25
- * Scale->Scale Amount Random = 1
- * Scale->Scale Amount Curve = New Curve
-   * Set points for the curve so it starts at 0.5, goes to 1 in the middle, and then 0 at the end. It should look like a little lopsided hill
- * Color->Color Ramp = New Gradient
-   * Set the Gradient so it is opaque white (255,255,255,255) on the left side and completely transparent (255,255,255,0) on the right side
- * Hue Variation->Variation = 1
- * Hue Variation->Variation Random = 1
-
-In `res://Brick/Brick.gd`, after the brick is set to die, set `$Confetti.emitting = true`. Then, update the statement in `_physics_process`, so the brick is deleted only `if dying and not $Confetti.emitting:`
-
----
-
-Test the game and make sure it is working correctly. You should be able to see the colors, sprites, and added effects as you play.
-
-Quit Godot. In GitHub desktop, you should now see the updated files listed in the left panel. In the bottom of that panel, type a Summary message (something like "Completes the exercise") and press the "Commit to master" button. On the right side of the top, black panel, you should see a button labeled "Push origin". Press that now.
-
-If you return to and refresh your GitHub repository page, you should now see your updated files with the time when they were changed.
-
-Now edit the README.md file. When you have finished editing, commit your changes, and then turn in the URL of the main repository page (https://github.com/[username]/Exercise-03a-Colors-and-Particles) on Canvas.
-
-The final state of the file should be as follows (replacing my information with yours):
-```
+ * Gravity->Gravity 
 # Exercise-03a-Colors-and-Particles
 
 Exercise for MSCH-C220
@@ -211,6 +186,5 @@ Created using [Godot 3.5.1](https://godotengine.org/download)
 Tweening, Screen Shake, Adding a face, Comet trail, Music and Sound, Shaders, etc.
 
 ## Created by 
+Theo Hawkins
 
-Jason Francis
-```
